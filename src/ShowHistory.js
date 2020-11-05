@@ -1,9 +1,6 @@
-
-import React, {useContext} from 'react';
-import GlobalContext from './GlobalContext';
+import React from 'react';
 
 function ShowHistory(props){
-    let myState = useContext(GlobalContext);
     
     return(
         <div className="history-item">
