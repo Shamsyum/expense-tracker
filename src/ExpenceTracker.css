@@ -19,6 +19,8 @@ h5{
   margin-left: 70px;
   margin-right: 70px;
   background-color: white;
+  border: groove;
+  padding-bottom: 10px;
  
   
 }

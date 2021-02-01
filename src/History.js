@@ -1,4 +1,4 @@
-import React, {useContext, useRef} from 'react';
+import React, {useContext} from 'react';
 import GlobalContext from './GlobalContext';
 import './HistoryItem.css';
 import HistoryItem from './HistoryItem';
@@ -8,11 +8,11 @@ function History(){
     let myState = useContext(GlobalContext);
     const adjustTransection = (value, type) => {
         if(type === 'income'){
-            myState.balance[1](()=> myState.balance[0] - Number(value));
-            myState.income[1](()=> myState.income[0] - Number(value)); 
+            myState.balance[1](myState.balance[0] - Number(value));
+            myState.income[1](myState.income[0] - Number(value)); 
         }else if(type === 'expense'){
-            myState.balance[1](()=> (myState.balance[0]) + Number(value));
-            myState.expence[1](()=> myState.expence[0] - Number(value));
+            myState.balance[1](myState.balance[0] + Number(value));
+            myState.expence[1](myState.expence[0] - Number(value));
         }
         console.log("transection adjust");
     }

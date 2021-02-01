@@ -1,5 +1,4 @@
-import React, {useContext, useRef} from 'react';
-import GlobalContext from './GlobalContext';
+import React from 'react';
 import './ExpenceTracker.css'
 
 
@@ -16,7 +15,7 @@ function HistoryItem({history, deleteTransection}){
                     
                 </div>
                <br/>
-               <button className="btn" onClick={()=> {deleteTransection(history.id, history.value, history.type)}}>❌</button>
+               <button className="btn" onClick={()=> {deleteTransection(history.id, history.value, history.type)}}>{"❌"}</button>
            </div>
     )
 }
