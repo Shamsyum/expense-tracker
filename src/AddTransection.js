@@ -17,7 +17,7 @@ function AddTransection(){
             myState.income[1](myState.income[0] + Number(amount.current.value)); 
             myState.history[1]([...myState.history[0],
                     {
-                        id: myState.history[0].length + 1, name: description.current.value, value: amount.current.value, type: 'Income'
+                        id: myState.history[0].length + 1, name: description.current.value, value: amount.current.value, type: 'income'
                     }
                 ]
             ); 
@@ -33,7 +33,10 @@ function AddTransection(){
                 myState.expence[1](myState.expence[0] + Number(amount.current.value));
                 myState.history[1]([...myState.history[0],
                     {
-                        id: myState.history[0].length + 1, name: description.current.value, value: amount.current.value, type: 'expence'
+                        id: myState.history[0].length + 1,
+                        name: description.current.value, 
+                        value: amount.current.value,
+                        type: 'expense'
                     }
                 ]
             );

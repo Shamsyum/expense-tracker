@@ -17,12 +17,12 @@ function Balance(){
         <div className="income-expense">
         <div className="income">
                 Income <br/>
-                {myState.income[0]} 
+                ${myState.income[0]} 
             </div>
 
             <div className="expense">
                 Expence <br/>
-                {myState.expence[0]}
+                ${myState.expence[0]}
             </div>
         </div>
             

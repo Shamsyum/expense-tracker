@@ -37,11 +37,23 @@ h5{
   margin-top: 0px;
 }
 
-.history-item{
-  background-color: white;
+.income-item{
+  background-color: green;
+  color: white;
   margin-left: 20%;
   margin-right: 20%;
   padding: 3px;
+  border: groove;
+  margin-bottom: 2px;
+}
+.expense-item{
+  background-color: red;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 3px;
+  border: groove;
+  margin-bottom: 2px;
 }
 
 
